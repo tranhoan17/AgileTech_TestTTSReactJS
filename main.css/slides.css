@@ -18,9 +18,8 @@ body {
 
 /* thiết lập style cho slideshow container */
 .slideshow-container {
-    width              : 70%;
-    position           : relative;
-    /* background-color: rgb(26, 92, 109); */
+    width   : 70%;
+    position: relative;
 }
 
 /* ẩn hình ảnh cho phần tử slideshow */
@@ -78,8 +77,6 @@ body {
     background-color: rgba(0, 0, 0, 0.8);
 }
 
-/* Thiết lập style cho nội dung của mỗi phần tử slideshow */
-
 /* thiết lập style  nút tròn điều khiển*/
 .dot {
     cursor          : pointer;
@@ -96,14 +93,6 @@ body {
 .dot:hover {
     background-color: #717171;
 }
-
-/* tạo hiệu ứng chuyển động fade
-.fade {
-    -webkit-animation-name    : fade;
-    -webkit-animation-duration: 1.5s;
-    animation-name            : fade;
-    animation-duration        : 1.5s;
-} */
 
 @-webkit-keyframes fade {
     from {
