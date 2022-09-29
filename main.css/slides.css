@@ -1,0 +1,138 @@
+* {
+    box-sizing: border-box
+}
+
+body {
+    background-color: black;
+}
+
+.container {
+    width           : 100%;
+    height          : 500px;
+    background-color: white;
+    display         : flex;
+    justify-content : center;
+    align-items     : center;
+    margin-top      : 200px;
+}
+
+/* thiết lập style cho slideshow container */
+.slideshow-container {
+    width              : 70%;
+    position           : relative;
+    /* background-color: rgb(26, 92, 109); */
+}
+
+/* ẩn hình ảnh cho phần tử slideshow */
+.mySlides {
+    display: none;
+
+}
+
+.block-slide {
+    background-color: rgb(26, 92, 109);
+    width           : 100%;
+    height          : 200px;
+    display         : flex;
+    justify-content : center;
+    align-items     : center;
+
+}
+
+.block-slide span {
+    color    : #f2f2f2;
+    font-size: 50px;
+}
+
+/* thiết kế nút mũi tên*/
+.prev,
+.next {
+    cursor       : pointer;
+    position     : absolute;
+    top          : 42%;
+    width        : auto;
+    margin-top   : -22px;
+    padding      : 16px;
+    border-radius: 50%;
+    color        : white;
+    font-weight  : bold;
+    font-size    : 19px;
+    animation    : 0.6s ease;
+    user-select  : none;
+}
+
+.prev {
+    left            : -6%;
+    background-color: black;
+}
+
+/* thiết kế nút mũi tên next nằm phía bên phải */
+.next {
+    right           : -6%;
+    background-color: black;
+}
+
+/* hiệu ứng thay đổi background khi hover vào nút mũi tên*/
+.prev:hover,
+.next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Thiết lập style cho nội dung của mỗi phần tử slideshow */
+
+/* thiết lập style  nút tròn điều khiển*/
+.dot {
+    cursor          : pointer;
+    height          : 15px;
+    width           : 15px;
+    margin          : 0 2px;
+    background-color: #bbb;
+    border-radius   : 50%;
+    display         : inline-block;
+    transition      : background-color 0.6s ease;
+}
+
+.active,
+.dot:hover {
+    background-color: #717171;
+}
+
+/* tạo hiệu ứng chuyển động fade
+.fade {
+    -webkit-animation-name    : fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name            : fade;
+    animation-duration        : 1.5s;
+} */
+
+@-webkit-keyframes fade {
+    from {
+        opacity: 0.4
+    }
+
+    to {
+        opacity: 1
+    }
+}
+
+@keyframes fade {
+    from {
+        opacity: 0.4
+    }
+
+    to {
+        opacity: 1
+    }
+}
+
+@keyframes animatedSlide {
+    from {
+        transform: translateX(100%);
+        opacity  : 1;
+    }
+
+    to {
+        transform: translateX(0%);
+        opacity  : 1;
+    }
+}
